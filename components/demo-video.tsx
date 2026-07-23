@@ -1,20 +1,22 @@
-import { marketingLinks } from "@/lib/marketing-config"
+"use client"
+
+import { useLanguage } from "@/components/language-provider"
+import { messages } from "@/lib/i18n"
+import { assetPath, marketingLinks } from "@/lib/marketing-config"
 
 export function DemoVideo() {
+  const { locale } = useLanguage()
+  const copy = messages[locale].demo
+
   return (
-    <section
-      id="demo"
-      className="scroll-mt-24 px-6 py-12 md:px-8 md:py-14"
-    >
+    <section id="demo" className="scroll-mt-24 px-6 py-12 md:px-8 md:py-14">
       <div className="page-shell">
         <div className="mx-auto mb-8 max-w-[620px] text-center">
-          <p className="section-kicker">Demo</p>
+          <p className="section-kicker">{copy.kicker}</p>
           <h2 className="mt-4 text-balance text-[clamp(2.1rem,4.5vw,3.5rem)] font-semibold leading-[1.03] tracking-[-0.06em] text-text-primary">
-            See the memory loop in one pass.
+            {copy.title}
           </h2>
-          <p className="mx-auto mt-4 max-w-[32ch] text-balance text-base leading-7 text-text-secondary">
-            Capture the thread, search it later, and reopen the context fast.
-          </p>
+          <p className="mx-auto mt-4 max-w-[38ch] text-balance text-base leading-7 text-text-secondary">{copy.description}</p>
         </div>
 
         <div className="lovable-media-frame p-3 md:p-4">
@@ -26,10 +28,10 @@ export function DemoVideo() {
             controls
             playsInline
             preload="metadata"
-            poster="/library.png"
+            poster={assetPath("/library.png")}
           >
             <source src={marketingLinks.demoVideoUrl} type="video/mp4" />
-            Your browser does not support the video tag.
+            {copy.fallback}
           </video>
         </div>
       </div>

@@ -82,12 +82,12 @@ export function getPlatformLabel(platform: PlatformName): string {
 export function PlatformLogo({
   platform,
   className,
-}: PlatformLogoProps): JSX.Element {
+}: PlatformLogoProps): ReactElement {
   const asset = platformMeta[platform]
 
   return (
     <img
-      src={asset.assetPath}
+      src={withBasePath(asset.assetPath)}
       alt=""
       aria-hidden="true"
       draggable={false}
@@ -101,3 +101,6 @@ export function PlatformLogo({
     />
   )
 }
+import type { ReactElement } from "react"
+
+import { assetPath as withBasePath } from "@/lib/marketing-config"

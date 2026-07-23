@@ -4,6 +4,9 @@
 
 @layer base {
   :root {
+    --font-manrope: "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", "Helvetica Neue", Arial, sans-serif;
+    --font-ibm-plex-mono: "Cascadia Code", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+
     --bg-page: 38 33% 95%;
     --bg-surface: 36 27% 98%;
     --bg-surface-hover: 38 18% 95%;

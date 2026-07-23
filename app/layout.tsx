@@ -1,43 +1,28 @@
 import React from "react"
 import type { Metadata } from "next"
-import { IBM_Plex_Mono, Manrope } from "next/font/google"
+
+import { LanguageProvider } from "@/components/language-provider"
+import { assetPath } from "@/lib/marketing-config"
 
 import "./globals.css"
 
-const manrope = Manrope({
-  subsets: ["latin"],
-  variable: "--font-manrope",
-})
-
-const ibmPlexMono = IBM_Plex_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-ibm-plex-mono",
-})
-
 export const metadata: Metadata = {
-  title: "Vesti — Local-first AI Memory",
+  title: "Vesti — Local-first AI conversation memory",
   description:
-    "Auto-capture your chatbot (ChatGPT, Claude, Gemini & DeepSeek) conversations. Searchable, quantified, and stored entirely in your browser.",
-  generator: "v0.app",
+    "Capture AI conversations across browsers, desktop apps, and terminals. Search, analyze, and reuse them locally.",
   icons: {
-    icon: "/logo.svg",
-    shortcut: "/logo.svg",
-    apple: "/logo.svg",
+    icon: assetPath("/logo.svg"),
+    shortcut: assetPath("/logo.svg"),
+    apple: assetPath("/logo.svg"),
   },
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="en"
-      className={`${manrope.variable} ${ibmPlexMono.variable}`}
-    >
-      <body className="font-sans antialiased">{children}</body>
+    <html lang="zh-CN" suppressHydrationWarning>
+      <body className="font-sans antialiased">
+        <LanguageProvider>{children}</LanguageProvider>
+      </body>
     </html>
   )
 }
