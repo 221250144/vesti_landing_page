@@ -7,6 +7,7 @@ import { assetPath } from "@/lib/marketing-config"
 import "./globals.css"
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://vesti.rth3.xyz"),
   title: "Vesti — Local-first AI conversation memory",
   description:
     "Capture AI conversations across browsers, desktop apps, and terminals. Search, analyze, and reuse them locally.",

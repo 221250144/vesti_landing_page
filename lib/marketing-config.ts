@@ -27,3 +27,13 @@ export const siteBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ""
 export function assetPath(path: string): string {
   return path.startsWith("/") ? `${siteBasePath}${path}` : path
 }
+
+export function getPrimaryInstallHref(fallback = "#download"): string {
+  const chromeStoreUrl: string = marketingLinks.chromeStoreUrl
+  return chromeStoreUrl === "#" ? fallback : chromeStoreUrl
+}
+
+export function isExternalPrimaryInstall(): boolean {
+  const chromeStoreUrl: string = marketingLinks.chromeStoreUrl
+  return chromeStoreUrl !== "#"
+}

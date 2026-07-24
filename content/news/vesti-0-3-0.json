@@ -1,0 +1,161 @@
+{
+  "slug": "vesti-0-3-0",
+  "version": "0.3.0",
+  "date": "2026.07.23",
+  "dateIso": "2026-07-23",
+  "category": "Product release",
+  "title": "Vesti APP 正式发布｜获取与Agent的对话",
+  "headline": "Vesti APP 正式上线",
+  "summary": "Vesti 桌面版正式上线：自动收集、探索、整理与沉淀，让散落的 AI Agent 对话重新成为可持续使用的知识。",
+  "lead": "Vesti 从浏览器里的AI对话，来到了你的桌面的Agent对话里：自动收集本机与网页端的 AI 会话，在本地完成探索、整理与沉淀。",
+  "author": "Vesti Team",
+  "coverImage": {
+    "src": "/news/vesti-0-3-0/01.png",
+    "alt": "Vesti 0.3.0 工作概览与实时采集状态",
+    "label": "OVERVIEW · LIVE CAPTURE",
+    "caption": "83 段对话、2 万条消息与 4 类数据源，在桌面上一眼看清。"
+  },
+  "highlightsKicker": "What's in vesti desktop",
+  "highlightsTitle": "更全面的控制中台",
+  "highlights": [
+    {
+      "number": "01",
+      "title": "自动收集",
+      "description": "统一收集本机 AI 编程工具与网页端会话"
+    },
+    {
+      "number": "02",
+      "title": "探索与学习",
+      "description": "从自己的会话库提问并建立知识地图"
+    },
+    {
+      "number": "03",
+      "title": "多视角思考",
+      "description": "让旧对话参与讨论，并沉淀为可复用工具"
+    },
+    {
+      "number": "04",
+      "title": "持续沉淀",
+      "description": "把每天的对话整理成日志、周报与长期进展"
+    }
+  ],
+  "intro": {
+    "kicker": "A new chapter",
+    "paragraphs": [
+      "随着Agent能力的日益精进，我们都开始在桌面端使用Codex、Cursor、Claude Code、Kimi Code等多个工具。因此，为了延续Vesti的核心能力，我们需要将这些对话收集下来。",
+      "同时，为了坚守“本地化储存”的初衷，我们认为一个桌面端的推出也有利于更加稳健的管理和更加全面的信息整合能力。",
+      "我们几乎没有做任何用户界面的改动，任何你曾经熟悉的功能，在桌面端都依旧存在哦。"
+    ]
+  },
+  "sections": [
+    {
+      "number": "01",
+      "kicker": "Capture",
+      "title": "收集Agent的对话",
+      "paragraphs": [
+        "Vesti 0.3.0 可以自动发现 Codex、Cursor、Kimi Code 与 Claude Code 的本机会话，也可以通过 VESTI 浏览器扩展接收网页端 AI 对话。",
+        "同步是增量的，原始会话会保留在本地 Vault。"
+      ],
+      "bullets": [
+        "自动发现本机 AI 编程工具会话",
+        "浏览器扩展与桌面端一键连接",
+        "增量同步，并保留原始会话备份"
+      ],
+      "images": [
+        {
+          "src": "/news/vesti-0-3-0/02.png",
+          "alt": "Vesti 0.3.0 采集引擎与扩展连接设置",
+          "label": "CAPTURE · FOUR SOURCES",
+          "caption": "Codex、Cursor、Kimi Code 与 Claude Code 的采集状态，都能在这里确认。"
+        }
+      ]
+    },
+    {
+      "number": "02",
+      "kicker": "Explore & Learn",
+      "title": "探索自己的知识库",
+      "paragraphs": [
+        "Explore 让你直接向自己的会话库提问，从旧对话中重新找到问题、证据与结论，也可以从推荐问题开始一场更轻量的探索。",
+        "Learn 会继续把这些内容整理为本地学习地图：你正在关注哪些领域、知识之间如何连接、接下来还值得深入什么。"
+      ],
+      "bullets": [
+        "向本地知识库直接提问",
+        "从推荐问题快速进入旧上下文",
+        "自动整理知识领域与学习地图"
+      ],
+      "images": [
+        {
+          "src": "/news/vesti-0-3-0/03.png",
+          "alt": "Vesti 0.3.0 Explore 知识库问答界面",
+          "label": "EXPLORE · ASK THE LIBRARY",
+          "caption": "从一个问题出发，让曾经发生过的对话重新参与今天。"
+        },
+        {
+          "src": "/news/vesti-0-3-0/04.png",
+          "alt": "Vesti 0.3.0 Learn 本地学习地图",
+          "label": "LEARN · KNOWLEDGE MAP",
+          "caption": "把近期关注的主题连接起来，看见自己的学习路径。"
+        }
+      ]
+    },
+    {
+      "number": "03",
+      "kicker": "Think & Reuse",
+      "title": "让知识参与讨论，也变成可复用工具",
+      "paragraphs": [
+        "Roundtable 会邀请不同立场的 AI 成员围绕同一个问题展开讨论。怀疑者、乐观者、实践者和领域专家从各自角度追问，让判断不只停留在单一答案上。",
+        "Prompt Plaza 则把对话里有效的方法重新提取出来，整理成可以复用、导入和导出的提示词资产。"
+      ],
+      "bullets": [
+        "多角色圆桌，从不同视角检查问题",
+        "从历史会话中提取高质量 Prompt",
+        "常用提示词统一管理、导入与导出"
+      ],
+      "images": [
+        {
+          "src": "/news/vesti-0-3-0/05.png",
+          "alt": "Vesti 0.3.0 Roundtable 多角色圆桌界面",
+          "label": "ROUNDTABLE · MULTI-PERSPECTIVE",
+          "caption": "把一个问题交给不同角色，让分歧帮助你看得更完整。"
+        },
+        {
+          "src": "/news/vesti-0-3-0/06.png",
+          "alt": "Vesti 0.3.0 Prompt Plaza 提示词广场",
+          "label": "PROMPT PLAZA · REUSE",
+          "caption": "从真实对话里提炼方法，把一次有效的 Prompt 留给下一次。"
+        }
+      ]
+    },
+    {
+      "number": "04",
+      "kicker": "Review & Grow",
+      "title": "把每天的对话，沉淀成可回看的进展",
+      "paragraphs": [
+        "当对话越来越多，真正重要的不是数量，而是能否看见自己走了多远。Vesti 会基于本地会话生成日志与周报，整理这一阶段的工作、里程碑和学习线索。"
+      ],
+      "bullets": [
+        "按时间回看每天发生的工作",
+        "自动整理一周的重点与里程碑",
+        "从会话变化中看见长期进展"
+      ],
+      "images": [
+        {
+          "src": "/news/vesti-0-3-0/07.png",
+          "alt": "Vesti 0.3.0 本周工作周报",
+          "label": "LOGS · WEEKLY REVIEW",
+          "caption": "从一周的对话里，重新看见完成的工作、关键进展与下一步。"
+        }
+      ]
+    }
+  ],
+  "quote": {
+    "text": "每一段认真发生过的对话，都值得有一个可以继续生长的地方。",
+    "byline": "— Vesti App"
+  },
+  "closing": {
+    "kicker": "Vesti 0.3.0 · Available now",
+    "title": "欢迎尝试Vesti桌面端！",
+    "body": "欢迎下载 Vesti 0.3.0，把散落在不同工具里的 AI 对话带回自己的知识空间。",
+    "buttonLabel": "Download Vesti"
+  }
+}

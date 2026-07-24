@@ -46,6 +46,29 @@ pnpm dev
 
 Then open [http://localhost:3000](http://localhost:3000).
 
+News debugging routes:
+
+- Homepage teaser: [http://localhost:3000/#news](http://localhost:3000/#news)
+- News index: [http://localhost:3000/news](http://localhost:3000/news)
+- Vesti 0.3.0 article: [http://localhost:3000/news/vesti-0-3-0](http://localhost:3000/news/vesti-0-3-0)
+
+News editing surfaces:
+
+- `lib/news.ts`: article metadata used by the homepage and News index
+- `components/news-section.tsx`: homepage News teaser
+- `app/news/page.tsx`: News index
+- `content/news/vesti-0-3-0.json`: editable article copy, sections, image order, and captions
+- `app/news/vesti-0-3-0/page.tsx`: release article layout template
+- `public/news/vesti-0-3-0/`: screenshots and article assets
+
+Changes refresh automatically while `pnpm dev` is running. Before publishing,
+run both checks:
+
+```bash
+pnpm exec tsc --noEmit --incremental false
+pnpm build
+```
+
 Production build:
 
 ```bash
