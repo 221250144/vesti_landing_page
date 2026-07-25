@@ -20,10 +20,26 @@ export function Footer() {
           </div>
 
           <div className="flex flex-wrap items-center gap-4 text-sm text-text-secondary">
-            <a href={marketingLinks.appRepoUrl} target="_blank" rel="noopener noreferrer" className="transition-colors duration-150 hover:text-text-primary">
+            <a
+              href={assetPath("/news")}
+              className="transition-colors duration-150 hover:text-text-primary"
+            >
+              News
+            </a>
+            <a
+              href={marketingLinks.appRepoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors duration-150 hover:text-text-primary"
+            >
               GitHub
             </a>
-            <a href="#download" className="transition-colors duration-150 hover:text-text-primary">{copy.install}</a>
+            <a
+              href={assetPath("/#download")}
+              className="transition-colors duration-150 hover:text-text-primary"
+            >
+              {copy.install}
+            </a>
             <button type="button" onClick={toggleLocale} className="transition-colors duration-150 hover:text-text-primary">
               {copy.language}
             </button>

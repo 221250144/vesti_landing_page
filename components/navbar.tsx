@@ -14,20 +14,26 @@ export function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-border-subtle/80 bg-[rgba(247,244,237,0.82)] backdrop-blur-xl">
       <div className="page-shell flex h-16 items-center justify-between px-6 md:px-8">
-        <a href="#" className="flex items-center gap-3">
+        <a href={assetPath("/")} className="flex items-center gap-3">
           <Image src={assetPath("/logo.svg")} alt="Vesti logo" width={28} height={28} className="h-7 w-7" />
           <span className="text-[15px] font-semibold tracking-[-0.02em] text-text-primary">Vesti</span>
         </a>
 
         <div className="hidden items-center gap-7 md:flex">
-          <a href="#download" className="text-sm text-text-secondary transition-colors duration-150 hover:text-text-primary">
+          <a href={assetPath("/#download")} className="text-sm text-text-secondary transition-colors duration-150 hover:text-text-primary">
             {copy.products}
           </a>
-          <a href="#features" className="text-sm text-text-secondary transition-colors duration-150 hover:text-text-primary">
+          <a href={assetPath("/#features")} className="text-sm text-text-secondary transition-colors duration-150 hover:text-text-primary">
             {copy.features}
           </a>
-          <a href="#demo" className="text-sm text-text-secondary transition-colors duration-150 hover:text-text-primary">
+          <a href={assetPath("/#demo")} className="text-sm text-text-secondary transition-colors duration-150 hover:text-text-primary">
             {copy.demo}
+          </a>
+          <a
+            href={assetPath("/news")}
+            className="text-sm text-text-secondary transition-colors duration-150 hover:text-text-primary"
+          >
+            News
           </a>
           <a
             href={marketingLinks.appRepoUrl}
@@ -50,7 +56,7 @@ export function Navbar() {
             <Languages className="h-3.5 w-3.5" />
             {locale === "zh" ? "EN" : "中"}
           </button>
-          <a href="#download" className="lovable-button-secondary hidden px-4 py-2.5 text-[13px] sm:inline-flex">
+          <a href={assetPath("/#download")} className="lovable-button-secondary hidden px-4 py-2.5 text-[13px] sm:inline-flex">
             {copy.install}
           </a>
         </div>

@@ -1,3 +1,7 @@
+import type { ReactElement } from "react"
+
+import { assetPath as withBasePath } from "@/lib/marketing-config"
+
 export type PlatformName =
   | "OpenAI"
   | "Kimi"
@@ -101,6 +105,3 @@ export function PlatformLogo({
     />
   )
 }
-import type { ReactElement } from "react"
-
-import { assetPath as withBasePath } from "@/lib/marketing-config"
